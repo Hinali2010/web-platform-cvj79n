@@ -1,0 +1,22 @@
+{
+  "event": [
+    {
+      "eventName": "Understanding color theory: the color wheel and findi...",
+      "eventDate": "21 Sep, 2020",
+      "ticketStatus": "Tickets Available: n/A",
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-1.png"
+    },
+    {
+      "eventName": "RGD Design Thinkers",
+      "eventDate": "21 Sep, 2020",
+      "ticketStatus": "Tickets Available: 11",
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-2.png"
+    },
+    {
+      "eventName": "What Design Can Do",
+      "eventDate": "21 Sep, 2020",
+      "ticketStatus": "Tickets Available: 206",
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-3.png"
+    }
+  ]
+}

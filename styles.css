@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Almarai';
+}
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+[class*='col-'] {
+  float: left;
+  padding: 0 15px;
+}
+
+/* For mobile phones: */
+[class*='col-'] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+/*   Start navigation bar   */
+
+header {
+  height: 100px;
+  background: #5c524d;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: auto;
+  float: left;
+}
+.logo img {
+  height: 55px;
+}
+.nav-item {
+  float: right;
+  list-style: none;
+}
+.nav-item li {
+  float: left;
+  padding: 0 20px;
+  border-radius: 3px;
+  transition: all 0.7s ease-in-out;
+  position: relative;
+}
+.nav-item li a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  position: relative;
+}
+.nav-item li:hover::after,
+.nav-item li.active a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #86eaae;
+  bottom: 0;
+  left: 0;
+}
+
+/*   End navigation bar   */
+
+/*   Start nav bar for small screens   */
+
+.icon {
+  display: none;
+}
+.toggle {
+  float: right;
+  margin: 20px;
+  color: #eee;
+  font-size: 30px;
+  border: 1px solid #eee;
+  padding: 0px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*   End nav bar for small screens   */
+
+/*   Start media query   */
+
+@media (max-width: 1309px) {
+  .icon {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #111;
+    border-bottom: 1px solid #444;
+  }
+  .list-item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -4px;
+    background-color: #222;
+    display: none;
+  }
+  .list-item li {
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #333;
+    float: none;
+  }
+}
+.event-btn {
+  border: 2px solid #d5d5d5;
+  border-radius: 4px;
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #757575;
+  padding: 16px 110px;
+  text-decoration: none;
+  cursor: unset;
+  transition: all 0.7s ease-in-out;
+}
+.event-btn.active {
+  border: 2px solid #fc732f;
+  color: #fc732f;
+  cursor: pointer;
+}
+.event-btn.active:hover {
+  color: #fff;
+  background-color: #fc732f;
+  cursor: pointer;
+}
+.event-img {
+  min-height: 171px;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+.event-img img {
+  width: 100%;
+  height: 100%;
+}
+.event {
+  background: #ffffff;
+  border: 1px solid #d5d5d5;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.event-desc {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.event-topic {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #212121;
+  display: flex;
+  margin-bottom: 24px;
+}
+.event-date-status-wrap {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.event-date {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #212121;
+  display: inline-flex;
+}
+.event-status {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #212121;
+  display: inline-flex;
+}
+
+/*   End media query   */
